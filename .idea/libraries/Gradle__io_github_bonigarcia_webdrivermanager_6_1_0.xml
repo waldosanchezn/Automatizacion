@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.bonigarcia:webdrivermanager:6.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.github.bonigarcia" artifactId="webdrivermanager" version="6.1.0" baseVersion="6.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.bonigarcia/webdrivermanager/6.1.0/b0c34f9ade1be1389ed20196e4a43dfa6bb67b5e/webdrivermanager-6.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.bonigarcia/webdrivermanager/6.1.0/48048b872fadfa5acb4ba45ac61204b52e5db11e/webdrivermanager-6.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

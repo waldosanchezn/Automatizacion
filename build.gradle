@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:6.1.0'
+    // Cucumber
+    implementation 'io.cucumber:cucumber-java:7.14.0'
+    implementation 'io.cucumber:cucumber-junit:7.14.0'
+
+    // JUnit
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useJUnit()
+}

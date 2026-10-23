@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.docker-java:docker-java-transport-httpclient5:3.5.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.docker-java" artifactId="docker-java-transport-httpclient5" version="3.5.0" baseVersion="3.5.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-transport-httpclient5/3.5.0/27f2189237b5a831a36f7acce6350b6bc50c223a/docker-java-transport-httpclient5-3.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-transport-httpclient5/3.5.0/f6795abcab4ee6c55dc2b3ee3e16d50332c28338/docker-java-transport-httpclient5-3.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

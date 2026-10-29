@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Validar búsqueda de solicitudes con filtros combinados #2</title>
+<link href="../../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div class="breadcrumbs">
+<a class="breadcrumb" href="../../index.html">all</a> &gt; 
+<a class="breadcrumb" href="../index.html">Runner.Runner</a> &gt; 
+<a class="breadcrumb" href="index.html">Búsqueda de solicitudes de vacaciones</a> &gt; 
+<span class="breadcrumb">Validar búsqueda de solicitudes con filtros combinados #2</span>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Gradle Test Run :test</h2>
+<h1>Validar búsqueda de solicitudes con filtros combinados #2</h1>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">summary</a>
+</li>
+<li>
+<a class="" href="#">standard output</a>
+</li>
+<li>
+<a class="" href="#">error output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>summary</h2>
+<div>
+<div class="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox duration">
+<div class="counter">16.443s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
+<span class="code">
+<pre id="root-0-test-stdout-Validar búsqueda de solicitudes con filtros combinados #2">
+@LEAVE @TC-006
+Scenario Outline: Validar búsqueda de solicitudes con filtros combinados # src/test/resources/features/leave.feature:35
+Driver context -&gt; Navegador:Chrome
+
+Sistema Operativo :windows 11, 10.0
+
+Navegador :Chrome
+Chrome seleccionado
+  Given que existen solicitudes de vacaciones                            # StepDefinition.LeaveDefinition.iniciarSesionEnOrangeHrm()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 66586 bytes]
+
+  And el usuario se encuentra en &quot;Leave List&quot;                            # StepDefinition.LeaveDefinition.navegarAListaDeVacaciones(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 92394 bytes]
+
+  When ingresa la fecha inicial &quot;2026-01-01&quot;                             # StepDefinition.LeaveDefinition.ingresarFechaInicial(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 104695 bytes]
+
+  And ingresa la fecha final &quot;2026-12-31&quot;                                # StepDefinition.LeaveDefinition.ingresarFechaFinal(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 111531 bytes]
+
+  And selecciona el estado &quot;Scheduled&quot;                                   # StepDefinition.LeaveDefinition.seleccionarEstado(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 98573 bytes]
+
+  And ingresa el nombre del empleado &quot;QA Employee 02&quot;                    # StepDefinition.LeaveDefinition.ingresarNombreEmpleado(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 100629 bytes]
+
+
+    [VALIDACION] No se encontró el empleado solicitado en OrangeHRM. Se omiten los filtros restantes porque requieren un empleado válido.
+
+  And selecciona al empleado desde el autocompletado                     # StepDefinition.LeaveDefinition.seleccionarEmpleadoDelAutocompletado()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 100915 bytes]
+
+  And selecciona la unidad &quot;Engineering&quot;                                 # StepDefinition.LeaveDefinition.seleccionarUnidad(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 100915 bytes]
+
+  And configura empleados anteriores en &quot;No&quot;                             # StepDefinition.LeaveDefinition.configurarEmpleadosAnteriores(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 100915 bytes]
+
+  And presiona el botón &quot;Search&quot;                                         # StepDefinition.LeaveDefinition.presionarBoton(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 100915 bytes]
+
+  Then se debe completar la búsqueda sin errores                         # StepDefinition.LeaveDefinition.validarBusquedaSinErrores()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 100957 bytes]
+
+  And se debe visualizar la tabla de resultados                          # StepDefinition.LeaveDefinition.validarTablaResultados()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 101634 bytes]
+
+  And las solicitudes deben corresponder al empleado &quot;QA Employee 02&quot;    # StepDefinition.LeaveDefinition.validarEmpleado(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 101302 bytes]
+
+  And las solicitudes deben cumplir el estado &quot;Scheduled&quot;                # StepDefinition.LeaveDefinition.validarEstado(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 99791 bytes]
+
+  And las solicitudes deben estar dentro del período consultado          # StepDefinition.LeaveDefinition.validarPeriodo()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 97001 bytes]
+
+  And las solicitudes deben corresponder a la unidad &quot;Engineering&quot;       # StepDefinition.LeaveDefinition.validarUnidad(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94654 bytes]
+
+  And los registros deben respetar el filtro de empleados anteriores     # StepDefinition.LeaveDefinition.validarFiltroEmpleadosAnteriores()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94654 bytes]
+
+  And no deben existir registros duplicados                              # StepDefinition.LeaveDefinition.validarRegistrosSinDuplicados()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94654 bytes]
+
+  And todas las páginas deben respetar los filtros aplicados             # StepDefinition.LeaveDefinition.validarFiltrosEnTodasLasPaginas()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94654 bytes]
+
+  When el usuario presiona el botón &quot;Reset&quot;                              # StepDefinition.LeaveDefinition.presionarBotonReset(java.lang.String)
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94654 bytes]
+
+  Then los filtros deben recuperar sus valores predeterminados           # StepDefinition.LeaveDefinition.validarFiltrosPredeterminados()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94654 bytes]
+
+  And no deben permanecer los criterios ingresados anteriormente         # StepDefinition.LeaveDefinition.validarCriteriosEliminados()
+
+    Embedding [SUCCESS] Step ScreenShots [image/png 94700 bytes]
+
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-Validar búsqueda de solicitudes con filtros combinados #2">Copy</button>
+</span>
+</div>
+<div class="tab">
+<h2>error output</h2>
+<span class="code">
+<pre id="root-0-test-stderr-Validar búsqueda de solicitudes con filtros combinados #2">oct. 27, 2026 6:08:00 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+oct. 27, 2026 6:08:00 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 156.0.8078.48. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stderr-Validar búsqueda de solicitudes con filtros combinados #2">Copy</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.6.0</a> at 27-10-2026 18:09:20</p>
+</div>
+</div>
+</body>
+</html>
